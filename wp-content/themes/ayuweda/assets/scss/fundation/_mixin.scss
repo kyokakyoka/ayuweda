@@ -1,0 +1,30 @@
+@use '_variables.scss' as var;
+
+//* =======================================================
+//* break point
+//* =======================================================
+$pc: 1400px;
+$ipro: 1024px;
+$sp: 600px;
+$s-sp: 374px;
+
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+}
+@mixin ipro {
+    @media (max-width: ($ipro)) {
+        @content;
+    }
+}
+@mixin sp {
+    @media (max-width: ($sp)) {
+      @content;
+    }
+}
+@mixin s-sp {
+    @media (max-width: ($s-sp)) {
+        @content;
+    }
+}

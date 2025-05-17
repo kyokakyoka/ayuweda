@@ -1,0 +1,34 @@
+@use '_mixin.scss' as mix;
+@use '_variables.scss' as var;
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size:  1.6rem;
+    font-family: var.$font-serif;
+    color: var.$color-text;
+    letter-spacing: 0;
+    line-height: 1.65;
+}
+* {
+    box-sizing: border-box;
+	word-wrap: break-word;
+}
+main {
+	display: block;
+}
+
+@media(min-width: 600px){
+    a[href^="tel:"]{
+      pointer-events: none;
+    }
+}
+
+img {
+    vertical-align: middle;
+}

@@ -1,0 +1,40 @@
+@use '../fundation/_mixin.scss' as mix;
+@use '../fundation/_variables.scss' as var;
+
+.u-pc--hidden {
+    display: none;
+    @include mix.sp {
+        display: block;
+    }
+}
+.u-tab--hidden {
+    display: none;
+    @include mix.ipro {
+        display: block;
+    }
+}
+.u-mob--hidden {
+    display: block;
+    @include mix.ipro {
+        display: none;
+    }
+}
+.u-sp--hidden {
+    display: block;
+    @include mix.sp {
+        display: none;
+    }
+}
+.u-hidden {
+    display: none;
+}
+
+.u-fade {
+    transform: translateY(40px);
+    opacity: 0;
+    transition: .8s;
+    &.active {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

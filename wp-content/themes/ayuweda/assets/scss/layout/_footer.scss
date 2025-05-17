@@ -1,0 +1,94 @@
+@use '../fundation/_mixin.scss' as mix;
+@use '../fundation/_variables.scss' as var;
+
+.l-footer {
+    padding: 8rem 0;
+    background: var.$color-bg2;
+    @include mix.sp{
+        padding: 5rem 0 8rem;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @include mix.ipro{
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+    }
+    &Info {
+        &__logo {
+            display: block;
+            max-width: 200px;
+            margin: 0 auto 3.5rem;
+            @include mix.ipro{
+                max-width: 210px;
+                margin: 0 auto 2rem;
+            }
+            @include mix.sp{
+                max-width: 140px;
+            }
+        }
+        &Contact {
+            display: flex;
+            flex-direction: column;
+            gap: .6rem;
+            &Btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                width: 192px;
+                height: 40px;
+                border: 1px solid var.$color-main;
+                border-radius: 50px;
+                font-size: 1.6rem;
+                font-family: var.$font-sans;
+                color: var.$color-main;
+                transition: .3s;
+                &:hover {
+                    opacity: .7;
+                    @include mix.ipro{
+                        opacity: 1;
+                    }
+                }
+                &.--min {
+                    width: 182px;
+                    font-size: 1.4rem;
+                    @include mix.sp{
+                        width: 192px;
+                    }
+                }
+                &__tel {
+                    width: 14px;
+                }
+            }
+        }
+    }
+    &Nav {
+        &List {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            @include mix.ipro{
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            &Item {
+                &Link {
+                    font-size: 1.4rem;
+                    font-family: var.$font-sans;
+                    color: var.$color-text;
+                    transition: .3s;
+                    &:hover {
+                        opacity: .7;
+                        @include mix.ipro{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use '../fundation/_mixin.scss' as mix;
+@use '../fundation/_variables.scss' as var;
+
+
+.l-inner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    @include mix.ipro{
+        max-width: 700px;
+    }
+}

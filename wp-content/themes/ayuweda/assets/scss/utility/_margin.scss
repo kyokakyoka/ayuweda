@@ -1,0 +1,60 @@
+@use '../fundation/_mixin.scss' as mix;
+@use '../fundation/_variables.scss' as var;
+
+.u-mg--0 {
+    margin: 0;
+}
+
+@for $i from 0 to 31 {
+    .u-mgTop--#{$i * 5} {
+        margin-top: 5px * $i;
+    }
+}
+
+@for $i from 0 to 31 {
+    .u-mgLeft--#{$i * 5} {
+        margin-left: 5px * $i;
+    }
+}
+
+@for $i from 0 to 31 {
+    .u-mgRight--#{$i * 5} {
+        margin-right: 5px * $i;
+    }
+}
+
+@for $i from 0 to 31 {
+    .u-mgBottom--#{$i * 5} {
+        margin-bottom: 5px * $i;
+    }
+}
+
+@include mix.sp {
+    .u-sp-mg--0 {
+        margin: 0;
+    }
+
+    @for $i from 0 to 31 {
+        .u-sp-mgTop--#{$i * 5} {
+            margin-top: 5px * $i;
+        }
+    }
+
+    @for $i from 0 to 31 {
+        .u-sp-mgLeft--#{$i * 5} {
+            margin-left: 5px * $i;
+        }
+    }
+
+    @for $i from 0 to 31 {
+        .u-sp-mgRight--#{$i * 5} {
+            margin-right: 5px * $i;
+        }
+    }
+
+    @for $i from 0 to 31 {
+        .u-sp-mgBottom--#{$i * 5} {
+            margin-bottom: 5px * $i;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use '../fundation/mixin' as mix;
+@use '../fundation/variables' as var;
+
+.c-ttl {
+    &__main {
+        height: 100px;
+        &.--2 {
+            height: 130px;
+        }
+        & img {
+            width: fit-content;
+        }
+    }
+    &__sub {
+        font-size: 2rem;
+        font-family: var.$font-sans;
+        font-weight: 500;
+        color: var.$color-text2;
+    }
+}
