@@ -5,6 +5,7 @@ wp-*.php
 **/wp-content/uploads
 **/wp-content/upgrade
 **/wp-content/plugins
+wp-content/themes/ayuweda/assets/css/style.min.css
 !**/wp-content/themes/**
 !**/wp-content/themes/*/index.php
 ayuweda.git
@@ -17,3 +18,4 @@ readme.html
 xmlrpc.php
 .vscode/settings.json
 wp-content/index.php
+wp-content/themes/ayuweda/assets/css/style.min.css.map
