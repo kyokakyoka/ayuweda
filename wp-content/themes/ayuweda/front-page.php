@@ -22,8 +22,27 @@
             </section>
             <section id="ayurveda">
                 <h4>さまざまな角度から行うヘルスケア</h4>
-                <div>
-
+                <div class="diagram">
+                    <div class="center">
+                        <img src="woman.png" alt="女性のイラスト" />
+                    </div>
+                    <div class="circle-item item1">トリートメント</div>
+                    <div class="circle-item item2">食事</div>
+                    <div class="circle-item item3">宝石</div>
+                    <div class="circle-item item4">占星術</div>
+                    <div class="circle-item item5">ヨガ・瞑想</div>
+                    <div>
+                        <p>ピッタ</p>
+                        <p>PITTA</p>
+                    </div>
+                    <div>
+                        <p>カパ</p>
+                        <p>KAPHA</p>
+                    </div>
+                    <div>
+                        <p>ヴァータ</p>
+                        <p>VATA</p>
+                    </div>
                 </div>
                 <div>
                     <p>アーユルヴェーダでは、食事やヨガ、オイルトリートメント、さらには宝石などの自然の力も使って、さまざまな角度から健康をサポートしていきます。一人ひとりに合った方法で、無理なく自分本来のバランスを取り戻していくのがアーユルヴェーダの魅力です。</p>
@@ -34,22 +53,68 @@
             <section id="service">
                 <h4>サービス一覧</h4>
                 <p>AYUWEDAの心と身体を育む3つの柱</p>
-                <ul>
-                    <li>
-                        <a href="">整える</a>
-                    </li>
-                    <li>
-                        <a href="">学ぶ</a>
-                    </li>
-                    <li>
-                        <a href="">取り入れる</a>
-                    </li>
-                </ul>
+                <div class="p-top-service__list">
+                    <div class="p-top-service__list-item">
+                        <div class="p-top-service__card">
+                            <a class="p-top-service__card-link" href="/service/#totonoeru">
+							    <h5 class="p-top-service__card-heading">整える</h5>
+							    <div class="p-top-service__card-image">
+								    <img src="/assets/images/top/totonoeru.png" class="p-top-service__card-image-item">
+								    <img src="/assets/images/top/totonoeru.png" class="p-top-service__card-image-item">
+							    </div>
+							    <div class="p-top-service__card-body">
+								    <ul class="p-top-service__card-body-lsit">
+									    <li class="p-top-service__card-body-lsit-item">アーユルヴェーダ施術</li>
+									    <li class="p-top-service__card-body-lsit-item">アストロロジー鑑定</li>
+									    <li class="p-top-service__card-body-lsit-item">カウンセリング</li>
+									    <li class="p-top-service__card-body-lsit-item">ヨガ・瞑想</li>
+								    </ul>
+							    </div>
+							    <div class="p-top-service__card-cover"></div>
+						    </a>
+                        </div>
+                        <div class="p-top-service__card">
+                            <a class="p-top-service__card-link" href="/service/#manabu">
+							    <h5 class="p-top-service__card-heading">学ぶ</h5>
+							    <div class="p-top-service__card-image c-thumb">
+								    <img src="/assets/images/top/manabu.png" class="p-top-service__card-image-item">
+								    <img src="/assets/images/top/manabu.png" class="p-top-service__card-image-item">
+							    </div>
+							    <div class="p-top-service__card-body">
+								    <ul class="p-top-service__card-body-lsit">
+									    <li class="p-top-service__card-body-lsit-item">オンライン講座</li>
+									    <li class="p-top-service__card-body-lsit-item">プログラム</li>
+									    <li class="p-top-service__card-body-lsit-item">アーユルキッチン</li>
+									    <li class="p-top-service__card-body-lsit-item">アーユルヴェーダの図書室</li>
+								    </ul>
+							    </div>
+							    <div class="p-top-service__card-cover"></div>
+						    </a>
+                        </div>
+                        <div class="p-top-service__card">
+                            <a class="p-top-service__card-link" href="/service/#toriireru">
+							    <h5 class="p-top-service__card-heading">取り入れる</h5>
+							    <div class="p-top-service__card-image c-thumb">
+								    <img src="/assets/images/top/toriireru.png" class="p-top-service__card-image-item">
+								    <img src="/assets/images/top/toriireru.png" class="p-top-service__card-image-item">
+							    </div>
+							    <div class="p-top-service__card-body">
+								    <ul class="p-top-service__card-body-lsit">
+									    <li class="p-top-service__card-body-lsit-item">食のセルフケア</li>
+									    <li class="p-top-service__card-body-lsit-item">オリジナルグッズ</li>
+									    <li class="p-top-service__card-body-lsit-item">季節のおすすめ</li>
+								    </ul>
+							    </div>
+							    <div class="p-top-service__card-cover"></div>
+						    </a>
+                        </div>
+                    </div>
+                </div>
                 <a href="">サービス一覧をみる</a>
             </section>
             <section id="message">
                 <h4>代表からのメッセージ</h4>
-                <img src="" alt="">
+                <img src="/assets/images/top/profile.png" alt="">
                 <div>
                     <p>菊澤 理恵</p>
                     <p>アーユルヴェーダ　トータルプロデュース『AYUWEDA』　代表</p>
@@ -61,15 +126,24 @@
                 <h4>お客さまの声</h4>
                 <ul>
                     <li>
-                        <p>52歳　女性（会社員）</p>
+                        <div>
+                            <img src="" alt="">
+                            <p>52歳　女性（会社員）</p>
+                        </div>
                         <p>スリランカの紅茶が好きなのをきっかけに、スリランカで根付いているアーユルヴェーダの施術を受けようと思いました。オールハンド、天然の良質なオイルを使っての施術なので、ケミカルな要素がない所に安心感があります。施術後はむくみが減ってリンパの流れが良くなります。</p>
                     </li>
                     <li>
-                        <p>43歳　女性（主婦）</p>
+                        <div>
+                            <img src="" alt="">
+                            <p>43歳　女性（主婦）</p>
+                        </div>
                         <p>精神的な安定と自分軸を持ちたいという気持ちがありアーユルヴェーダについてなんとなく気になっていたところ、インスタグラムで菊澤さんを知りました。歴史の長さとナチュラルなところに安心感を抱いています。自分との関係性とまわりとの関係性も良くなり、生きやすくなる健康法だと思います。</p>
                     </li>
                     <li>
-                        <p>55歳　女性（事務職）</p>
+                        <div>
+                            <img src="" alt="">
+                            <p>55歳　女性（事務職）</p>
+                        </div>
                         <p>癌を発症して健康への意識がかわり生活習慣をアーユルヴェーダの実践に変更したのがきっかけです。アーユルヴェーダは範囲が広く難しい部分もありますが、菊澤さんのアドバイスのもと、少しずつ取り入れ自然と馴染んできてるように思います。予防法セルフケアが自分でできるところが好きです。</p>
                     </li>
                 </ul>                    
@@ -96,6 +170,7 @@
             </section>
             <section id="column">
                 <h4>コラム</h4>
+
 
 
             </section>
