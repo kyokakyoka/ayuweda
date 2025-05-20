@@ -3,13 +3,18 @@
 <body>
     <main>
         <article>
+            <div class="bg-wrapper">
+                <div class="fixed-bg"></div>
+            </div>
+            <video autoplay muted loop playsinline class="bg-wrapper">
+                <source src="<?php echo get_template_directory_uri(); ?>/assets/images/top/mainVisual.MP4" type="video/mp4">
+            </video>
             <header id="topHeader" class="l-topHeader">
                 <div class="l-topHeader-catchCopy">
                     <h2 class="l-topHeader-catchCopy-mainTxt">私が自分のお医者さま</h2>
                     <p class="l-topHeader-catchCopy-txt">古来からの贈り物アーユルヴェーダで人生をクリエイト</p>
                 </div>
                 <a class="l-topHeader-btn" href="">ご予約はこちら</a>
-                <img src="assets/images/top/mainVisual.MP4" alt="">
             </header>
             <section id="about" class="l-about">
                 <h3 class="l-about-catchCopy">アーユルヴェーダで、<br>あなただけの特別なケアを。</h3>
@@ -23,32 +28,37 @@
             </section>
             <section id="ayurveda" class="l-ayurveda">
                 <h4 class="title">さまざまな角度から行うヘルスケア</h4>
-                <div class="l-ayurveda-diagram">
-                    <div class="l-ayurveda-diagram-center">
-                        <img src="woman.png" alt="女性のイラスト">
+                <div class="l-ayurveda-body">
+                    <div class="l-ayurveda-body-diagram">
+                        <div class="l-ayurveda-body-diagram-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/woman.png" alt="女性のイラスト">
+                        </div>
+                        <div class="l-ayurveda-body-diagram-item item1">トリートメント</div>
+                        <div class="l-ayurveda-body-diagram-item item2">食事</div>
+                        <div class="l-ayurveda-body-diagram-item item3">宝石</div>
+                        <div class="l-ayurveda-body-diagram-item item4">占星術</div>
+                        <div class="l-ayurveda-body-diagram-item item5">ヨガ・瞑想</div>
+                        <div class="l-ayurveda-body-diagram-dosha">
+                            <p class="l-ayurveda-body-diagram-dosha-kana">ピッタ</p>
+                            <p class="l-ayurveda-body-diagram-dosha-english">PITTA</p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/pitha.svg" alt="">
+                        </div>
+                        <div class="l-ayurveda-body-diagram-dosha">
+                            <p class="l-ayurveda-body-diagram-dosha-kana">カパ</p>
+                            <p class="l-ayurveda-body-diagram-dosha-english">KAPHA</p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/kapha.svg" alt="">
+                        </div>
+                        <div class="l-ayurveda-body-diagram-dosha">
+                            <p class="l-ayurveda-body-diagram-dosha-kana">ヴァータ</p>
+                            <p class="l-ayurveda-body-diagram-dosha-english">VATA</p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/vatha.svg" alt="">
+                        </div>
                     </div>
-                    <div class="l-ayurveda-diagram-item item1">トリートメント</div>
-                    <div class="l-dayurveda-iagram-item item2">食事</div>
-                    <div class="l-ayurveda-diagram-item item3">宝石</div>
-                    <div class="l-ayurveda-diagram-item item4">占星術</div>
-                    <div class="l-ayurveda-diagram-item item5">ヨガ・瞑想</div>
-                    <div class="l-ayurveda-diagram-dosha">
-                        <p class="l-ayurveda-diagram-dosha-kana">ピッタ</p>
-                        <p class="l-ayurveda-diagram-dosha-english">PITTA</p>
+                    <div class="l-ayurveda-body-txt">
+                        <p class="l-ayurveda-body-txt-item1">アーユルヴェーダでは、食事やヨガ、オイルトリートメント、さらには宝石などの自然の力も使って、さまざまな角度から健康をサポートしていきます。一人ひとりに合った方法で、無理なく自分本来のバランスを取り戻していくのがアーユルヴェーダの魅力です。</p>
+                        <p class="l-ayurveda-body-txt-item2">いま日本にあるアーユルヴェーダサロンでは、どれか一つの分野に特化していることが多いです。AYUWEDAでは、オールマイティに知識を持つ菊澤がそれぞれの人にあったアプローチをオーダーメイドに執り行います。</p>
+                        <a class="btn" href="">AYUWEDAのこだわり</a>
                     </div>
-                    <div class="l-ayurveda-diagram-dosha">
-                        <p class="l-ayurveda-diagram-dosha-kana">カパ</p>
-                        <p class="l-ayurveda-diagram-dosha-english">KAPHA</p>
-                    </div>
-                    <div class="l-ayurveda-diagram-dosha">
-                        <p class="l-dayurveda-iagram-dosha-kana">ヴァータ</p>
-                        <p class="l-ayurveda-diagram-dosha-english">VATA</p>
-                    </div>
-                </div>
-                <div class="l-ayurveda-txt">
-                    <p class="l-ayurveda-txt-item">アーユルヴェーダでは、食事やヨガ、オイルトリートメント、さらには宝石などの自然の力も使って、さまざまな角度から健康をサポートしていきます。一人ひとりに合った方法で、無理なく自分本来のバランスを取り戻していくのがアーユルヴェーダの魅力です。</p>
-                    <p class="l-ayurveda-txt-item">いま日本にあるアーユルヴェーダサロンでは、どれか一つの分野に特化していることが多いです。AYUWEDAでは、オールマイティに知識を持つ菊澤がそれぞれの人にあったアプローチをオーダーメイドに執り行います。</p>
-                    <a class="btn" href="">AYUWEDAのこだわり</a>
                 </div>
             </section>
             <section id="service" class="l-service">
@@ -77,7 +87,7 @@
                             <a class="l-service-list-item-card-link" href="/service/#manabu">
 							    <h5 class="l-service-list-item-card-link-title">学ぶ</h5>
 							    <div class="l-service-list-item-card-link-img">
-								    <img src="assets/images/top/manabu.png">
+								    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/manabu.png">
 							    </div>
 							    <div class="l-service-list-item-card-link-body">
 								    <ul class="l-service-list-item-card-link-body-list">
@@ -94,7 +104,7 @@
                             <a class="l-service-list-item-card-link" href="/service/#toriireru">
 							    <h5 class="l-service-list-item-card-link-title">取り入れる</h5>
 							    <div class="l-service-list-item-card-link-img">
-								    <img src="assets/images/top/toriireru.png">
+								    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/toriireru.png">
 							    </div>
 							    <div class="l-service-list-item-card-link-body">
 								    <ul class="l-service-list-item-card-link-body-list">
@@ -112,7 +122,7 @@
             </section>
             <section id="message" class="l-message">
                 <h4 class="title">代表からのメッセージ</h4>
-                <img src="ayuweda/assets/images/top/profile.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/profile.png" alt="">
                 <div class="l-message-txt">
                     <p class="l-message-txt-name">菊澤 理恵</p>
                     <p class="l-message-txt-position">アーユルヴェーダ　トータルプロデュース『AYUWEDA』　代表</p>
@@ -125,21 +135,21 @@
                 <ul class="l-voice-body">
                     <li class="l-voice-body-list"> 
                         <div class="l-voice-body-list-item">
-                            <img src="" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/voice1.png" alt="">
                             <p class="l-voice-body-list-item-name">52歳　女性（会社員）</p>
                         </div>
                         <p class="l-voice-body-list-txt">スリランカの紅茶が好きなのをきっかけに、スリランカで根付いているアーユルヴェーダの施術を受けようと思いました。オールハンド、天然の良質なオイルを使っての施術なので、ケミカルな要素がない所に安心感があります。施術後はむくみが減ってリンパの流れが良くなります。</p>
                     </li>
                     <li class="l-voice-body-list">
                         <div class="l-voice-body-list-item">
-                            <img src="" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/voice2.png" alt="">
                             <p class="l-voice-body-list-item-name">43歳　女性（主婦）</p>
                         </div>
                         <p class="l-voice-body-list-txt">精神的な安定と自分軸を持ちたいという気持ちがありアーユルヴェーダについてなんとなく気になっていたところ、インスタグラムで菊澤さんを知りました。歴史の長さとナチュラルなところに安心感を抱いています。自分との関係性とまわりとの関係性も良くなり、生きやすくなる健康法だと思います。</p>
                     </li>
                     <li class="l-voice-body-list">
                         <div class="l-voice-body-list-item">
-                            <img src="" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/voice3.png" alt="">
                             <p class="l-voice-body-list-item-name">55歳　女性（事務職）</p>
                         </div>
                         <p class="l-voice-body-list-txt">癌を発症して健康への意識がかわり生活習慣をアーユルヴェーダの実践に変更したのがきっかけです。アーユルヴェーダは範囲が広く難しい部分もありますが、菊澤さんのアドバイスのもと、少しずつ取り入れ自然と馴染んできてるように思います。予防法セルフケアが自分でできるところが好きです。</p>

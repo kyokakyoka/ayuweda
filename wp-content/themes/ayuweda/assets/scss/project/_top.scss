@@ -1,590 +1,108 @@
 @use '../fundation/_mixin.scss' as mix;
 @use '../fundation/_variables.scss' as var;
 
-.p-top {
-    &Loader {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background: linear-gradient(#C39B96 0%,#cc6c5f 49%,#C39B96 100%);
-        transition: opacity .8s ease-out;
-        z-index: 9999;
-        &.fade-out {
-            opacity: 0;
-            pointer-events: none;
+
+.l-topHeader {
+    &-catchCopy {
+        &-mainTxt {
+            color: #FFF;
+            text-align: center;
+            font-family: "Noto Serif JP";
+            font-size: 4.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
-        &__bg {
-            position: absolute;
-            top: 50%;
-            right: 50%;
-            border-radius: 50%;
-            font-family: var.$font-cinzel;
-            font-weight: bold;
-            font-size: 20rem;
-            color: white;
-            transform: translate(50%,-50%);
-        }
-        &__num {
-            opacity: .7;
+
+        &-txt {
+            color: #FFF;
+            text-align: center;
+            font-family: "Zen Kaku Gothic New";
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
     }
-    &Mv {
-        position: relative;
-        height: 100vh;
-        background: url(../images/top/top-mv.png) center/cover;
-        @include mix.sp{
-            background: url(../images/top/top-mv_sp.png) center/cover;
-        }
-        &__txt {
-            position: absolute;
-            left: 120px;
-            bottom: 15%;
-            font-size: 4rem;
-            font-weight: 500;
-            color: #fff;
-            line-height: 1.675;
-            transition: opacity 1.5s, transform 1.5s!important;
-            @include mix.ipro{
-                left: 15px;
-                font-size: 2.8rem;
-                line-height: 2.4;
-            }
-        }
+
+    &-btn {
+        width: 321px;
+        height: 66px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #FFF;
+        background: #413F43;
+        color: #FFF;
+        font-family: "Zen Kaku Gothic New";
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: normal;
     }
-    &About {
-        margin-top: -6rem;
-        padding: 20rem 0 12rem;
-        background: var.$color-bg;
-        @include mix.sp{
-            padding: 12rem 0 5rem;
-        }
-        &__head {
-            margin-bottom: 3rem;
-            font-size: 3rem;
-            font-weight: 500;
-            @include mix.sp{
-                margin-bottom: 2rem;
-                font-size: 2.6rem;
-            }
-        }
-        &List {
-            display: flex;
-            align-items: center;
-            gap: 3rem;
-            margin-bottom: 2.4rem;
-            border-left: 1px solid var.$color-main;
-            @include mix.sp{
-                align-items: unset;
-            }
-            &Term {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                padding: 2rem 0 2rem 2.4rem;
-                font-family: var.$font-cinzel;
-                color: var.$color-main;
-                @include mix.sp{
-                    gap: 0;
-                    padding: 0 0 2rem 2.4rem;
-                }
-                &__sub {
-                    font-size: 1.4rem;
-                }
-                &__main {
-                    font-size: 5.5rem;
-                    font-weight: 400;
-                }
-            }
-            &Desc {
-                &__main {
-                    margin-bottom: 1.5rem;
-                    font-size: 2rem;
-                    font-weight: 500;
-                }
-                &__txt {
-                    font-size: 1.8rem;
-                    font-family: var.$font-sans;
-                    line-height: 1.6;
-                }
-            }
-        }
+}
+
+.l-about {
+    color: #FFF;
+
+    &-catchCopy {
+        text-align: center;
+        font-family: "Noto Serif JP";
+        font-size: 5.9rem;
+        font-weight: 500;
     }
-    &Serapisto {
-        padding: 12rem 0 20rem;
-        background: var.$color-bg2;
-        overflow: hidden;
-        @include mix.sp{
-            padding: 6rem 0 20rem;
-        }
-        &About {
-            display: flex;
-            gap: 5rem;
-            margin-bottom: 13rem;
-            @include mix.ipro{
-                flex-direction: column;
-                gap: 4.3rem;
-                margin-bottom: 8rem;
-            }
-            &Info {
-                max-width: 600px;
-                &__sub {
-                    margin-bottom: 4rem;
-                    font-size: 2.5rem;
-                    font-weight: 500;
-                    color: var.$color-main;
-                    @include mix.sp{
-                        margin-bottom: 1rem;
-                    }
-                }
-                &__head {
-                    margin-bottom: 2rem;
-                    font-size: 3.2rem;
-                    font-weight: 400;
-                    line-height: 1.5;
-                }
-                &__txt {
-                    font-size: 1.6rem;
-                    line-height: 1.5;
-                }
-            }
-            &Img {
-                position: relative;
-                width: 900px;
-                height: 630px;
-                @include mix.pc{
-                    height: 360px;
-                }
-                @include mix.ipro{
-                    width: calc(100% + 20px);
-                    height: 100%;
-                }
-                &File {
-                    position: absolute;
-                    width: 900px;
-                    margin-top: -3rem;
-                    padding-top: 3rem;
-                    overflow: hidden;
-                    @include mix.pc{
-                        position: unset;
-                        width: 100%;
-                        max-width: 500px;
-                    }
-                    @include mix.ipro{
-                        max-width: 100%;
-                    }
-                    &__pager {
-                        top: 0!important;
-                        left: 0!important;
-                        width: unset!important;
-                        @include mix.pc{
-                            top: -30px!important;
-                        }
-                        & .swiper-pagination-bullet {
-                            background: rgba(195, 155, 150, .5);
-                            opacity: 1 !important;
-                        }
-                        & .swiper-pagination-bullet-active {
-                            background: #c39b96!important;
-                        }
-                    }
-                }
-                &__txt {
-                    position: absolute;
-                    bottom: -50px;
-                    left: -50px;
-                    font-size: 10rem;
-                    font-family: var.$font-chonburi;
-                    color: #fff;
-                    z-index: 5;
-                    @include mix.pc{
-                        bottom: -20px;
-                        left: -30px;
-                        font-size: 6rem;
-                    }
-                    @include mix.sp{
-                        left: -20px;
-                        font-size: 3rem;
-                    }
-                }
-            }
-        }
-        &Intro {
-            display: flex;
-            gap: 2rem;
-            margin-top: -12rem;
-            padding-top: 12rem;
-            @include mix.ipro{
-                flex-direction: column;
-            }
-            &Info {
-                max-width: 580px;
-                &Name {
-                    display: flex;
-                    align-items: center;
-                    gap: 2.5rem;
-                    margin-bottom: 2.5rem;
-                    @include mix.sp{
-                        margin-bottom: 2rem;
-                    }
-                    &__main {
-                        font-size: 3.2rem;
-                        font-weight: 500;
-                    }
-                    &__sub {
-                        font-size: 2rem;
-                        font-weight: 500;
-                    }
-                }
-                &__img {
-                    max-width: 580px;
-                }
-                &Sns {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    margin-bottom: 3rem;
-                    &__img {
-                        max-width: 24px;
-                    }
-                    &__txt {
-                        font-size: 2rem;
-                    }
-                }
-                &__txt {
-                    font-family: var.$font-sans;
-                    line-height: 1.6;
-                }
-            }
-            &__img img {
-                height: 430px;
-                object-fit: cover;
-            }
-        }
+
+    &-txt {
+        width: 53%;
+        margin: 0 auto;
+        margin-top: 164px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 2.5;
     }
-    &News {
-        position: relative;
-        margin-top: -6rem;
-        padding: 18rem 0 6rem;
-        background: var.$color-bg;
-        overflow: hidden;
-        @include mix.ipro{
-            padding: 11rem 0 4.5rem;
-        }
-        &Top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 5rem;
-            @include mix.sp{
-                margin-bottom: 3rem;
-            }
-            &__all {
-                position: relative;
-                padding-right: 2.5rem;
-                font-family: var.$font-sans;
-                color: var.$color-text;
-                transition: .3s;
-                @include mix.sp{
-                    display: none;
-                }
-                &:hover {
-                    opacity: .7;
-                    @include mix.ipro{
-                        opacity: 1;
-                    }
-                }
-                &::before {
-                    position: absolute;
-                    content: "";
-                    width: 16px;
-                    height: 12px;
-                    right: 0;
-                    background: url(../images/top/arrow.png) center/cover;
-                    transform: translateY(50%);
-                }
-            }
-        }
-        &Slider {
-            &List {
-                display: flex;
-                gap: 1.3rem;
-                @include mix.sp{
-                    gap: 0;
-                    padding-bottom: 1rem;
-                }
-                &Item {
-                    max-width: 280px;
-                    flex-shrink: unset;
-                    @include mix.sp{
-                        max-width: 100%;
-                        flex-shrink: 0;
-                    }
-                    &Link {
-                        display: block;
-                        transition: .3s;
-                        &:hover {
-                            opacity: .7;
-                            @include mix.ipro{
-                                opacity: 1;
-                            }
-                        }
-                        &__img {
-                            margin-bottom: 1.5rem;
-                        }
-                        &__date {
-                            margin-bottom: .3rem;
-                            font-size: 1.4rem;
-                            font-family: var.$font-sans;
-                            color: var.$color-main;
-                        }
-                        &__ttl {
-                            font-family: var.$font-sans;
-                            color: var.$color-text;
-                            display: -webkit-box;
-                            -webkit-box-orient: vertical;
-                            -webkit-line-clamp: 2;
-                            overflow: hidden;
-                        }
-                    }
-                }
-            }
-            &Pager {
-                display: none;
-                @include mix.ipro{
-                    display: block;
-                    width: fit-content!important;
-                    right: 50%!important;
-                    left: unset!important;
-                    bottom: 20px!important;
-                    top: unset!important;
-                    transform: translateX(50%);
-                }
-                & .swiper-pagination-bullet {
-                    background: rgba(195, 155, 150,.5);
-                    opacity: 1!important;
-                }
-                & .swiper-pagination-bullet-active {
-                    background: var.$color-main;
-                }
-            }
-        }
+
+    &-btn {
+        width: 405px;
+        height: 63px;
+        margin: 82px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #FFF;
+        font-weight: 400;
+        line-height: normal;
     }
-    &Pickup {
-        margin-top: -12rem;
-        padding: 18rem 0 12rem;
-        background: var.$color-bg;
-        @include mix.ipro{
-            margin-top: -13rem;
-            padding: 15.5rem 0 5rem;
-        }
-        &__txt {
-            margin-bottom: 5rem;
-            font-family: var.$font-sans;
-        }
-        &List {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            @include mix.ipro{
-                grid-template-columns: 1fr;
-                gap: 2rem;
+}
+
+.l-ayurveda {
+    &-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-diagram {
+            &-center {
+                width: 193.626px;
+                height: 489px;
+                flex-shrink: 0;
+                aspect-ratio: 193.63/489.00;
             }
-            &Item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 5rem 5rem 5.6rem;
-                background: url(../images/top/pickup-bg.png) center/cover;
-                border-radius: 10px;
-                @include mix.ipro{
-                    padding: 3rem 2rem 4rem;
-                }
-                &Fee {
-                    margin-bottom: 3rem;
-                    font-size: 3rem;
-                    font-family: var.$font-sans;
-                    color: #fff;
-                    &__min {
-                        font-size: 1.8rem;
-                    }
-                    &__num {
-                        font-size: 1.8rem;
-                    }
-                    &__tax {
-                        font-size: 1.8rem;
-                    }
-                }
-                &Menu {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 8px;
-                    margin-bottom: 3rem;
-                    &Name {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        height: 40px;
-                        padding: 0 1rem;
-                        border: 1px solid #fff;
-                        border-radius: 50px;
-                        font-family: var.$font-sans;
-                        color: #fff;
-                    }
-                }
-                &__ttl {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 260px;
-                    height: 70px;
-                    margin-bottom: 3rem;
-                    background: #fff;
-                    border-radius: 50px;
-                    font-size: 2rem;
-                    font-family: var.$font-sans;
-                    font-weight: 500;
-                    @include mix.ipro{
-                        height: 60px;
-                    }
-                }
-                &__txt {
-                    font-family: var.$font-sans;
-                    font-weight: 500;
-                    color: #fff;
-                }
+
+            &-item {
+                font-family: "Noto Serif JP";
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: normal;
             }
         }
-    }
-    &Case {
-        position: relative;
-        margin-top: -6rem;
-        padding: 16rem 0;
-        background: var.$color-bg2;
-        overflow: hidden;
-        @include mix.ipro{
-            padding: 11rem 0 9.6rem;
-        }
-        &__txt {
-            margin-bottom: 5.5rem;
-            font-size: 1.8rem;
-            font-family: var.$font-sans;
-            @include mix.ipro{
-                margin-bottom: 2.5rem;
-            }
-        }
-        &Slider {
-            &List {
-                &Item {
-                    padding: 3.2rem 3.2rem 1.6rem;
-                    background: #fff;
-                    border-radius: 10px;
-                    @include mix.ipro{
-                        max-width: 100%;
-                    }
-                }
-            }
-            &__next {
-                display: none;
-                @include mix.ipro{
-                    display: block;
-                    top: unset;
-                    bottom: 40px;
-                    right: 50%;
-                    transform: translateX(-50%);
-                }
-                &::after {
-                    content: url(../images/top/pickup-next.png);
-                }
-            }
-        }
-    }
-    &Access {
-        margin-top: -6rem;
-        padding: 16rem 0 15rem;
-        background: var.$color-bg;
-        @include mix.sp{
-            padding: 11rem 0 5rem;
-        }
-        &__inner {
-            display: flex;
-            gap: 10rem;
-            @include mix.ipro{
-                flex-direction: column;
-                gap: 5rem;
-            }
-            @include mix.sp{
-                gap: 2rem;
-            }
-        }
-        &Info {
-            width: 423px;
-            @include mix.ipro{
-                width: 100%;
-            }
-            &__ttl {
-                margin-bottom: 3.2rem;
-                font-size: 3rem;
-                font-weight: 500;
-                @include mix.sp{
-                    margin-bottom: 1.5rem;
-                }
-            }
-            &__txt {
-                width: fit-content;
-                margin-bottom: 2.5rem;
-                font-family: var.$font-sans;
-                font-weight: 500;
-                @include mix.sp{
-                    margin-bottom: 1rem;
-                }
-                &.--address {
-                    position: relative;
-                    padding-right: 3rem;
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        top: 50%;
-                        right: 0;
-                        width: 20px;
-                        height: 24px;
-                        background: url(../images/top/address.png) center/cover;
-                        transform: translateY(-50%);
-                        @include mix.ipro{
-                            display: none;
-                        }
-                    }
-                }
-                &.--tel {
-                    position: relative;
-                    padding-right: 3rem;
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        top: 50%;
-                        right: 0;
-                        width: 14px;
-                        height: 18px;
-                        background: url(../images/common/tel.png) center/cover;
-                        transform: translateY(-50%);
-                    }
-                }
-            }
-        }
-        &__map {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: calc(100% - 523px);
-            height: 430px;
-            font-family: var.$font-sans;
-            font-weight: 500;
-            @include mix.ipro{
-                width: 100%;
-                height: 212px;
-            }
-            & iframe {
-                width: 100%;
-                height: 100%;
+
+        &-txt {
+            width: 35%;
+            font-weight: 400;
+            line-height: 2.5;
+
+            &-item2 {
+                margin-top: 36px;
             }
         }
     }
