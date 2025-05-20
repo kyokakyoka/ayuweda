@@ -3,12 +3,12 @@
 <body>
     <main>
         <article>
-            <header id="articleHeader" class="l-articleHeader">
-                <div class="l-articleHeader-catchCopy">
-                    <h2 class="l-articleHeader-catchCopy-mainTxt">私が自分のお医者さま</h2>
-                    <p class="l-articleHeader-catchCopy-txt">古来からの贈り物アーユルヴェーダで人生をクリエイト</p>
+            <header id="topHeader" class="l-topHeader">
+                <div class="l-topHeader-catchCopy">
+                    <h2 class="l-topHeader-catchCopy-mainTxt">私が自分のお医者さま</h2>
+                    <p class="l-topHeader-catchCopy-txt">古来からの贈り物アーユルヴェーダで人生をクリエイト</p>
                 </div>
-                <a class="l-articleHeader-btn" href="">ご予約はこちら</a>
+                <a class="l-topHeader-btn" href="">ご予約はこちら</a>
                 <img src="assets/images/top/mainVisual.MP4" alt="">
             </header>
             <section id="about" class="l-about">
@@ -60,7 +60,7 @@
                             <a class="l-service-list-item-card-link" href="/service/#totonoeru">
 							    <h5 class="l-service-list-item-card-link-title">整える</h5>
 							    <div class="l-service-list-item-card-link-img">
-								    <img src="assets/images/top/totonoeru.png">
+								    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/totonoeru.png">
 							    </div>
 							    <div class="l-service-list-item-card-link-body">
 								    <ul class="l-service-list-item-card-link-body-list">
