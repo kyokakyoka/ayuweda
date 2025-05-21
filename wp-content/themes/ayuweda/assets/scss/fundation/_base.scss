@@ -20,9 +20,16 @@ body {
 }
 
 .title {
+    margin-top: 200px;
     color: #595049;
     text-align: center;
     font-family: "Noto Serif JP";
     font-size: 4.4rem;
     font-weight: 400;
+}
+
+.line {
+    width: 83%;
+    display: block;
+    margin: 61px auto 0;
 }

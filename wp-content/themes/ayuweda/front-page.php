@@ -18,6 +18,7 @@
             </header>
             <section id="about" class="l-about">
                 <h3 class="l-about-catchCopy">アーユルヴェーダで、<br>あなただけの特別なケアを。</h3>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line_white.svg" alt="" class="line">
                 <div class="l-about-txt">
                     <p class="l-about-txt-item">アーユルヴェーダとは、5000年以上の歴史を持つインドやスリランカの伝統的な医学です。<br>心・身体・魂を整え、本来の健やかさと自分らしいさを取り戻していくための智慧。</p>
                     <p class="l-about-txt-item">私たち一人ひとりには、体質を構成するドーシャ（エネルギーの要素）があり、<br>そのバランスは日々の暮らしや季節、心の状態によって少しずつ変化しています。<br>だからこそ、自分の身体と心の声に耳を傾け、今の自分に必要なケアを知ることが大切です。</p>
@@ -28,30 +29,33 @@
             </section>
             <section id="ayurveda" class="l-ayurveda">
                 <h4 class="title">さまざまな角度から行うヘルスケア</h4>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line.svg" alt="" class="line">
                 <div class="l-ayurveda-body">
                     <div class="l-ayurveda-body-diagram">
                         <div class="l-ayurveda-body-diagram-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/woman.png" alt="女性のイラスト">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/woman.png" alt="女性のイラスト" class="l-ayurveda-body-diagram-center-img">
                         </div>
-                        <div class="l-ayurveda-body-diagram-item item1">トリートメント</div>
-                        <div class="l-ayurveda-body-diagram-item item2">食事</div>
-                        <div class="l-ayurveda-body-diagram-item item3">宝石</div>
-                        <div class="l-ayurveda-body-diagram-item item4">占星術</div>
-                        <div class="l-ayurveda-body-diagram-item item5">ヨガ・瞑想</div>
+                        <div class="l-ayurveda-body-diagram-item">
+                            <div class="l-ayurveda-body-diagram-item item1">トリートメント</div>
+                            <div class="l-ayurveda-body-diagram-item item2">食事</div>
+                            <div class="l-ayurveda-body-diagram-item item3">宝石</div>
+                            <div class="l-ayurveda-body-diagram-item item4">占星術</div>
+                            <div class="l-ayurveda-body-diagram-item item5">ヨガ・瞑想</div>
+                        </div>
                         <div class="l-ayurveda-body-diagram-dosha">
                             <p class="l-ayurveda-body-diagram-dosha-kana">ピッタ</p>
                             <p class="l-ayurveda-body-diagram-dosha-english">PITTA</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/pitha.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/pitha.svg" alt="" class="pittaImg">
                         </div>
                         <div class="l-ayurveda-body-diagram-dosha">
                             <p class="l-ayurveda-body-diagram-dosha-kana">カパ</p>
                             <p class="l-ayurveda-body-diagram-dosha-english">KAPHA</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/kapha.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/kapha.svg" alt="" class="kaphaImg">
                         </div>
                         <div class="l-ayurveda-body-diagram-dosha">
                             <p class="l-ayurveda-body-diagram-dosha-kana">ヴァータ</p>
                             <p class="l-ayurveda-body-diagram-dosha-english">VATA</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/vatha.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/vatha.svg" alt="" class="vataImg">
                         </div>
                     </div>
                     <div class="l-ayurveda-body-txt">
@@ -64,6 +68,7 @@
             <section id="service" class="l-service">
                 <h4 class="title">サービス一覧</h4>
                 <p class="subTitle">AYUWEDAの心と身体を育む3つの柱</p>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line.svg" alt="" class="line">
                 <div class="l-service-list">
                     <div class="l-service-list-item">
                         <div class="l-service-list-item-card">
@@ -122,16 +127,22 @@
             </section>
             <section id="message" class="l-message">
                 <h4 class="title">代表からのメッセージ</h4>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/profile.png" alt="">
-                <div class="l-message-txt">
-                    <p class="l-message-txt-name">菊澤 理恵</p>
-                    <p class="l-message-txt-position">アーユルヴェーダ　トータルプロデュース『AYUWEDA』　代表</p>
-                    <p class="l-message-txt-item">自分自身を深く見つめ、日々の暮らしを整えていくアーユルヴェーダの智慧。AYUWEDAでは、その実践をサポートし、あなたの内側からの調和を育むお手伝いをしています。日本の風土や文化にアーユルヴェーダの知恵を融合させ、自分を整える力を育むためのサポートを提供しています。</p>
-                    <a class="btn" href="">詳しくみる</a>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line.svg" alt="" class="line">
+                <div class="l-message-body">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/profile.png" alt="" class="l-message-body-img">
+                    <div class="l-message-body-txt">
+                        <p class="l-message-body-txt-name">菊澤 理恵</p>
+                        <p class="l-message-body-txt-position">アーユルヴェーダ　トータルプロデュース『AYUWEDA』　代表</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line_message.svg" alt="">
+                        <p class="l-message-body-txt-item">自分自身を深く見つめ、日々の暮らしを整えていくアーユルヴェーダの智慧。<br>AYUWEDAでは、その実践をサポートし、あなたの内側からの調和を育むお手伝いをしています。</p>
+                        <p class="l-message-body-txt-item-2">日本の風土や文化にアーユルヴェーダの知恵を融合させ、自分を整える力を育むためのサポートを提供しています。</p>
+                        <a class="btn" href="">詳しくみる</a>
+                    </div>
                 </div>
             </section>
             <section id="voice" class="l-voice">
                 <h4 class="title">お客さまの声</h4>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line.svg" alt="" class="line">
                 <ul class="l-voice-body">
                     <li class="l-voice-body-list"> 
                         <div class="l-voice-body-list-item">
@@ -158,6 +169,7 @@
             </section>
             <section id="news" class="l-news">
                 <h4 class="title">お知らせ</h4>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line.svg" alt="" class="line">
                 <dl class="l-news-list">
                     <dt class="l-news-list-item">
                         <time class="l-news-list-item-date">2025.05.03</time>
@@ -179,12 +191,14 @@
             </section>
             <section id="column" class="l-column">
                 <h4 class="title">コラム</h4>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line.svg" alt="" class="line">
 
 
 
             </section>
             <section id="faq" class="l-faq">
                 <h4 class="title">よくあるご質問</h4>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/line.svg" alt="" class="line">
                 <ul class="l-faq-list">
                     <li class="l-faq-list-item"><p class="l-faq-list-item-q">Q</p>アーユルヴェーダとはなんですか？</li>
                     <li class="l-faq-list-item"><p class="l-faq-list-item-q">Q</p>料金はどのような感じになりますか？</li>

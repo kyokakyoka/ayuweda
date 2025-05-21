@@ -55,7 +55,7 @@
     &-txt {
         width: 53%;
         margin: 0 auto;
-        margin-top: 164px;
+        margin-top: 82px;
         text-align: center;
         font-weight: 400;
         line-height: 2.5;
@@ -79,16 +79,56 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 99px;
 
         &-diagram {
+            position: relative;
+            width: 536px;
+            height: 536px;
+            border-radius: 536px;
+            background: #EEE9D6;
+            margin: auto;
+
             &-center {
-                width: 193.626px;
-                height: 489px;
-                flex-shrink: 0;
-                aspect-ratio: 193.63/489.00;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-35%, -50%);
+
+                &-img {
+                    width: 70%;
+                    height: auto;
+                }
+
+                &-dosha {
+                    width: 150px;
+                    // &-pittaImg {
+                    //     width: 111px;
+                    //     height: 154px;
+                    //     aspect-ratio: 110.77/154.00;
+                    // }
+
+                    // &-kaphaImg {
+                    //     width: 160px;
+                    //     height: 157px;
+                    //     aspect-ratio: 159.80/157.00;
+                    // }
+
+                    // &-vataImg {
+                    //     width: 126px;
+                    //     height: 114px;
+                    //     aspect-ratio: 125.61/114.00;
+                    // }
+                }
             }
 
             &-item {
+                position: absolute;
+                width: 135px;
+                height: 135px;
+                border-radius: 135px;
+                background: #FFF;
+                text-align: center;
                 font-family: "Noto Serif JP";
                 font-size: 1.8rem;
                 font-weight: 400;
@@ -103,6 +143,70 @@
 
             &-item2 {
                 margin-top: 36px;
+            }
+        }
+    }
+}
+
+.l-service {
+    &-list {
+        display: flex;
+
+        &-item {
+
+            &-card {
+
+                &-link {
+
+                    &-img {
+                        width: 351px;
+                        height: 471px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.l-message {
+    &-body {
+        margin-top: 126px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+
+        &-img {
+            width: 33%;
+            height: auto;
+            aspect-ratio: 233/210;
+        }
+
+        &-txt {
+            width: 42%;
+
+            &-name {
+                font-family: "Noto Serif JP";
+                font-size: 3.2rem;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-position {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 8px;
+            }
+
+            &-item {
+                font-weight: 400;
+                line-height: 1.5;
+                margin-top: 33px;
+
+                &-2 {
+                    margin-top: 5%;
+                }
             }
         }
     }
